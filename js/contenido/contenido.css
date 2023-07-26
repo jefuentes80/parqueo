@@ -1,0 +1,110 @@
+.contenido {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido .caja-img {
+    width: 50%;
+    max-height: 60rem;
+    background-color: rgb(77, 180, 220);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-img span {
+    font-size: 25rem;
+}
+
+.caja-img h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.form-entrada input,
+textarea {
+    padding: 1rem;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+    outline: none;
+}
+
+.form-entrada {
+    width: 40%;
+    max-height: 60rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 6rem);
+    gap: 1rem;
+
+    align-content: center;
+}
+
+.form-entrada span {
+    font-size: 3rem;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.form-entrada .placa {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.form-entrada .tiempo-entrada {
+    font-size: 2rem;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.form-entrada .comentario-entrada {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    font-size: 1.6rem;
+    resize: none;
+}
+
+.form-entrada button {
+    grid-column-start: 4;
+
+}
+
+
+/* Tableta */
+@media screen and (max-width:760px) {
+    .contenido {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        gap: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    .contenido .caja-img {
+        width: 100%;
+    }
+
+    .contenido .form-entrada {
+        width: 100%;
+    }
+}
