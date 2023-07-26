@@ -6,7 +6,7 @@ let header_del_DOM = document.querySelector(".header");
 // almacenar en una variable el contenido a agregar
 let header = `
 <div class="logotipo">
-    <img src="../img/logo.png">
+    <img src="./img/logo.png">
     <h2>Parqueo Rockemma</h2>
 </div>
 <nav class="nav">
